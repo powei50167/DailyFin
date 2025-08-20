@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DailyFin 財經日報室</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>每日新聞</h1>
+        </header>
+        
+        <main>
+            <section class="news-list">
+                <div class="date-picker">
+                    <input type="text" id="date-select" placeholder="請選擇日期">
+                </div>
+                <section class="filter-section">
+                    <h3>新聞分類篩選</h3>
+                    <div id="category-filters"></div>
+                  </section>  
+                <h2>重點新聞</h2>
+                <ul id="news-titles"></ul>
+            </section>         
+            <section class="news-content">
+                <div id="news-display">
+                    <h2 id="article-title">歡迎使用新聞閱讀器</h2>
+                    <p class="article-meta" id="article-date"></p>
+                    <div id="article-body">
+                        <p>今日新聞內容尚未更新，請稍後重新查詢。</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <p>&copy; 新聞閱讀網 - 讓 AI 幫你掌握市場動態 </p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/zh-tw.js"></script>
+    <script src="/static/script.js"></script>
+</body>
+</html>
